@@ -79,7 +79,7 @@ Regarding total units purchased, kitchen appliances and kitchen accessories hold
   <summary>Demographic-specific Product Preferences</summary>
   
   
-  **In terms of total units purchased**
+  **IN TERMS OF UNITS PURCHASED**
   
   **Age Group: 21-30 years**
 
@@ -110,7 +110,7 @@ Regarding total units purchased, kitchen appliances and kitchen accessories hold
   **United States**: Furniture top the units purchased category, while electronics rank the lowest.
 
 
-  **In terms of total sales**
+  **IN TERMS OF TOTAL SALES**
 
   **Age Group: 21-30 years**
   
@@ -146,16 +146,20 @@ When considering total units purchased, the top 11 customers across all branches
 <details>
   <summary>Country Specific Insights</summary>
 
- **In terms of total sales**
+ **IN TERMS OF TOTAL SALES**
  
 In Australia, the top 10 customers, ranked in descending order are customers with id; 60, 81, 120, 48, 111, 195, 161, 46, 220 and 99
+
 In Canada, the top 10 customers, ranked in descending order are customers with id; 100, 231, 125, 49, 191, 67, 94, 122, 103 and 47
+
 In United States, the top 10 customers, ranked in descending order are customers with id; 9, 24,21,20, 184, 109, 30, 121, 13 and 56
 
- **In terms of units purchased**
+ **IN TERMS OF UNITS PURCHASED**
  
 In Australia, the top 9 customers, ranked in descending order, have the following IDs: 60, 126, 48, 96, 99, 46, 81, 90, and 76.
+
 In Canada, the top 9 customers, listed in descending order, have the following IDs: 47, 231, 67, 100, 191, 94, 32, 110, and 103.
+
 In the United States, the top 11 customers,listed in descending order, have the following IDs: 21, 9, 22, 24, 5, 226, 104, 14, 16, 139, and 162.
 
 </details>
