@@ -83,31 +83,31 @@ Regarding total units purchased, kitchen appliances and kitchen accessories hold
   
   **Age Group: 21-30 years**
 
-  **Australia and Canada**: Kitchen appliances stand out as the most frequently purchased category, whereas home accessories are least frequently purchased.
+  Australia and Canada: Kitchen appliances stand out as the most frequently purchased category, whereas home accessories are least frequently purchased.
 
-  **United States**: Kitchen accessories are the most frequently purchased, with furniture being the least.
+  United States: Kitchen accessories are the most frequently purchased, with furniture being the least.
   
   **Age Group: 31-40 years**
 
-  **Australia**:  kitchen appliances take the lead in frequency of purchase, while electronics is the least.
+  Australia:  kitchen appliances take the lead in frequency of purchase, while electronics is the least.
   
-  **Canada**: Kitchen appliances is the most frequently purchased category, while home accessories record the least.
+  Canada: Kitchen appliances is the most frequently purchased category, while home accessories record the least.
 
-  **United States**: kitchen appliances, home accessories, and furniture share the top spot in frequency of purchase, with electronics ranking the lowest.
+  United States: kitchen appliances, home accessories, and furniture share the top spot in frequency of purchase, with electronics ranking the lowest.
 
   **Age Group: 41-50 years**
   
-  **Australia and Canada**: Kitchen accessories is the most frequently purchased category, with electronics being the least.
+  Australia and Canada: Kitchen accessories is the most frequently purchased category, with electronics being the least.
 
-  **United States**: Kitchen appliances is the most frequently purchased category, while electronics record the least.
+  United States: Kitchen appliances is the most frequently purchased category, while electronics record the least.
 
   **Age Group: 51+ years**
   
-  **Australia**: Kitchen accessories top the units purchased category, while home accessories rank the lowest. Electronics record no purchases.
+  Australia: Kitchen accessories top the units purchased category, while home accessories rank the lowest. Electronics record no purchases.
 
-  **Canada**: Home accessories top the units purchased category, while kitchen accessories rank the lowest. Electronics record no purchases.
+  Canada: Home accessories top the units purchased category, while kitchen accessories rank the lowest. Electronics record no purchases.
 
-  **United States**: Furniture top the units purchased category, while electronics rank the lowest.
+  United States: Furniture top the units purchased category, while electronics rank the lowest.
 
 
   **IN TERMS OF TOTAL SALES**
@@ -118,23 +118,23 @@ Regarding total units purchased, kitchen appliances and kitchen accessories hold
 
   **Age Group: 31-40 years**
   
-**Australia:** Electronics made the highest sales while kitchen accessories made the least.
+Australia: Electronics made the highest sales while kitchen accessories made the least.
 
-**Canada:** Electronics made the highest sales while home accessories made the least.
+Canada: Electronics made the highest sales while home accessories made the least.
 
-**United States:** Furniture recorded the highest sales while kitchen accessories recorded the lowest.
+United States: Furniture recorded the highest sales while kitchen accessories recorded the lowest.
 
   **Age Group: 41-50 years**
   
-**Australia and Canada:** Electronics made the highest sales while home accessories made the lowest 
+Australia and Canada: Electronics made the highest sales while home accessories made the lowest 
 
-**United States:** Furniture made the highest sales while electronics made the lowest
+United States: Furniture made the highest sales while electronics made the lowest
 
   **Age Group: 51+ years**
   
-**Australia:** Furniture made the highest sales while home accessories made the lowest.
+Australia: Furniture made the highest sales while home accessories made the lowest.
 
-**Canada and United States:** Furniture made the highest sales while kitchen accessories made the lowest.
+Canada and United States: Furniture made the highest sales while kitchen accessories made the lowest.
 
 </details>
 
