@@ -1,4 +1,13 @@
 # Cross-Country Sales Analysis
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Analysis Process](#analysis-process)
+- [Key Findings](#key-findings)
+- [Recommendations](#recommendations)
 ### Project Overview
 
 After opening three stores in 2021 in the US, Australia, and Canada, EcoLiving-Essentials Mart seeks to analyze its business performance during the years 2022 and 2023.
