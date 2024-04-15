@@ -1,26 +1,28 @@
 -- DATA CLEANING
 -- 1) Combine the first and last names of all customers 
-set sql_safe_updates=0; -- to disable safe updates mode
 
-alter table customers
-add column customer_name varchar(255);
+SET sql_safe_updates=0; -- to disable safe updates mode 
 
-update customers
-set customer_name = concat(first_name, ' ', last_name);
+ALTER TABLE customers
+ADD COLUMN customer_name varchar(255);
 
-alter table customers
-drop column first_name,
-drop column last_name;
+UPDATE customers
+SET customer_name = concat(first_name, ' ', last_name);
+
+ALTER TABLE customers
+DROP COLUMN first_name,
+DROP COLUMN last_name;
 
 -- 2) Modify the customer_email field to display censored email addresses for customers 
 
-update customers
-set email= concat(substring(email, 1, 2), repeat('*',position('@' in email)-3), substring(email, position('@' in email)));
+UPDATE customers
+SET email= concat(substring(email, 1, 2), repeat('*',position('@' in email)-3), substring(email, position('@' in email)));
 
-alter table customers
-rename column email to censored_email;
+ALTER TABLE customers
+RENAME COLUMN email to censored_email;
 
 -- 3)Write a query to break out the address column into seperate columns for street, city, state, postal_code and country
+
 ALTER TABLE customers
 ADD COLUMN street VARCHAR(255),
 ADD COLUMN city VARCHAR(100),
@@ -29,18 +31,19 @@ ADD COLUMN postal_code VARCHAR(20),
 ADD COLUMN country varchar(255);
 
 UPDATE customers
-set street= substring(address, 1, position(',' in address)-1),
+SET street= substring(address, 1, position(',' in address)-1),
 city= trim(substring_index(substring_index(address, ',', 2), ',', -1)),
 state= trim(substring_index(substring_index(address, ',', 3), ',', -1)),
 postal_code= trim(substring_index(substring_index(address, ',', -2), ',', 1)),
 country= trim(substring_index(address, ',', -1));
 
-alter table customers
-drop column address;
+ALTER TABLE customers
+DROP COLUMN address;
 
 -- 4) Segment the customer's age into age brackets
+
 ALTER table customers
-ADD column age_group varchar(255);
+ADD COLUMN age_group varchar(255);
 
 UPDATE customers
 SET age_group = 
@@ -61,49 +64,53 @@ SELECT
 FROM
      product;
 
-drop table product;
+-- Drop the original table
 
-set sql_safe_updates=1;  -- enable safe update mode
+DROP TABLE product;
+
+-- enable the safe update mode
+
+SET sql_safe_updates=1; 
 
 -- DATA ANALYSIS
+
 -- 1) Customer demographic analysis
 
 -- Query the distribution of customers by gender
-select customer_gender, count(customer_gender) as gender_count
-from customers
-group by customer_gender;
+SELECT customer_gender, count(customer_gender) as gender_count
+FROM customers
+GROUP BY customer_gender;
 
 -- Query the distribution of customers by age
-
-select customer_age, count(customer_age) as count_of_ages
-from customers
-group by customer_age
-order by count_of_ages desc;
+SELECT customer_age, count(customer_age) as count_of_ages
+FROM customers
+GROUP BY customer_age
+ORDER BY count_of_ages desc;
 
 -- Distribution of customers by country
-select country, count(distinct customer_id) as customers_count
-from customers
-group by country
-order by customers_count desc;
+SELECT country, count(distinct customer_id) as customers_count
+FROM customers
+GROUP BY country
+ORDER BY customers_count desc;
 
 -- Geographic distribution of customers by city, state, and country.
-select city, state, country, count(customer_id) as customers_count
-from customers
-group by city, state, country
-order by customers_count desc;
+SELECT city, state, country, count(customer_id) as customers_count
+FROM customers
+GROUP BY city, state, country
+ORDER BY customers_count desc;
 
 
 -- 2) Product Analysis:
 
 -- Distribution of products by category.
-select product_category, count(product_name) as product_count
-from products
-group by product_category;
+SELECT product_category, count(product_name) as product_count
+FROM products
+GROUP BY product_category;
 
 -- Average price of products within each category.
-select product_category, round(avg(product_price),2)
-from products
-group by product_category;
+SELECT product_category, round(avg(product_price),2)
+FROM products
+GROUP BY product_category;
 
 -- Top 10 most purchased products
 SELECT
@@ -165,22 +172,23 @@ GROUP BY year, month;
 -- 4) Target market analysis
 
 -- Query the top product category preferred by customers in different age groups 
-WITH ranked_products as
-(select c.age_group, 
+WITH ranked_products as(
+SELECT c.age_group, 
        p.product_category, 
        sum(pu.units_purchased) as purchase_count,
        row_number() over (partition by age_group order by sum(pu.units_purchased) desc) as rownum
-from customers c
-join purchase pu on c.customer_id=pu.customer_id
-join products p on pu.product_id=p.product_id
-group by c.age_group, p.product_category)
-select 
+FROM customers c
+JOIN purchase pu ON c.customer_id=pu.customer_id
+JOIN products p ON pu.product_id=p.product_id
+GROUP BY c.age_group, p.product_category
+)
+SELECT
       age_group,
       product_category,
       purchase_count
-from
+FROM
       ranked_products
-where rownum=1;
+WHERE rownum=1;
 
 
 -- Query the total sales made in each country
@@ -225,12 +233,12 @@ JOIN
 GROUP BY
 	c.country, customer_name
 )
-select country, 
+SELECT country, 
        customer_name,
        total_units_purchased
-from top_customers
-where rownum between 1 and 10
-order by country, total_units_purchased desc;
+FROM top_customers
+WHERE rownum between 1 and 10
+ORDER BY country, total_units_purchased desc;
 
 -- Retrieve the top 10 customers by total_purchase_amount within each country.
 WITH top_customers as (
@@ -248,12 +256,12 @@ JOIN
 GROUP BY 
 	c.country, customer_name
 )
-select country, 
+SELECT country, 
        customer_name,
        total_purchase_amount
-from top_customers
-where rownum between 1 and 10
-order by country, total_purchase_amount desc;
+FROM top_customers
+WHERE rownum between 1 and 10
+ORDER BY country, total_purchase_amount desc;
 
 -- Total sales for each state in australia.
 SELECT c.state,
@@ -327,12 +335,12 @@ JOIN
 GROUP BY
     c.country, p.product_category
 )
-select
-	country,
-	product_category, 
-	total_sales
-from ranked_products
-where rownum=1;
+SELECT
+	  country,
+	  product_category, 
+	  total_sales
+FROM ranked_products
+WHERE rownum=1;
 
 -- Best selling product in each state across the countries
 WITH RankedProducts AS (
@@ -378,19 +386,19 @@ SELECT
 FROM RankedProducts
 WHERE rn = 1;
 
--- creating a view to export fields needed for analysis
-create view customer as 
-select customer_id, customer_name, age_group, gender, city, state, country
-from customers;
+-- creating a view to export the fields needed for analysis
+CREATE VIEW customer AS 
+SELECT customer_id, customer_name, age_group, gender, city, state, country
+FROM customers;
 
-create view product as
-select*
-from products;
+CREATE VIEW product AS
+SELECT*
+FROM products;
 
-create view sales as
-select pu.*,p.product_price, (p.product_price*pu.units_purchased) as total_sales
-from purchase pu
-join products p
-on pu.product_id=p.product_id
+CREATE VIEW sales AS
+SELECT pu.*,p.product_price, (p.product_price*pu.units_purchased) as total_sales
+FROM purchase pu
+JOIN products p
+ON pu.product_id=p.product_id
 
 
