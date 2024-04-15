@@ -1,0 +1,61 @@
+product_id_name,product_category,product_price
+101_iPhone,Electronics,999.99
+102_Macbook,Electronics,1499.99
+103_iPad,Electronics,499.99
+104_Samsung Galaxy,Electronics,799.99
+105_Google Pixel,Electronics,699.99
+106_Vizio TV,Electronics,799.99
+107_PlayStation 4,Electronics,299.99
+108_Xbox One,Electronics,399.99
+109_Desk,Furniture,199.99
+110_Chair,Furniture,99.99
+111_Table,Furniture,149.99
+112_Sofa,Furniture,499.99
+113_Bed,Furniture,699.99
+114_Bookshelf,Furniture,79.99
+115_Desk Lamp,Home Accessories,29.99
+116_Mirror,Home Accessories,49.99
+117_Area Rug,Home Accessories,99.99
+118_Indoor Plant,Home Accessories,39.99
+119_Vase,Home Accessories,19.99
+120_Coffee Mug,Kitchen Accessories,9.99
+121_Toaster,Kitchen Appliances,39.99
+122_Coffee Maker,Kitchen Appliances,79.99
+123_Blender,Kitchen Appliances,59.99
+124_Electric Kettle,Kitchen Appliances,29.99
+125_Chef's Knife,Kitchen Accessories,49.99
+126_Frying Pan,Kitchen Accessories,29.99
+127_Cooking Utensil Set,Kitchen Accessories,19.99
+128_Stand Mixer,Kitchen Appliances,199.99
+129_Convection Oven,Kitchen Appliances,299.99
+130_Toaster Oven,Kitchen Appliances,99.99
+131_Kitchen Scale,Kitchen Accessories,19.99
+132_Strainer,Kitchen Accessories,9.99
+133_Cheese Grater,Kitchen Accessories,14.99
+134_Cutting Board,Kitchen Accessories,24.99
+135_Hand Blender,Kitchen Appliances,39.99
+136_Measuring Cups,Kitchen Accessories,9.99
+137_Cupcake Pan,Kitchen Accessories,12.99
+138_Vegetable Peeler,Kitchen Accessories,7.99
+139_Juicer,Kitchen Appliances,49.99
+140_Air Fryer,Kitchen Appliances,79.99
+141_Food Processor,Kitchen Appliances,89.99
+142_Rice Cooker,Kitchen Appliances,49.99
+143_Slow Cooker,Kitchen Appliances,39.99
+144_Electric Grill,Kitchen Appliances,59.99
+145_Waffle Maker,Kitchen Appliances,29.99
+146_Hand Mixer,Kitchen Appliances,39.99
+147_Electric Can Opener,Kitchen Appliances,19.99
+148_Immersion Blender,Kitchen Appliances,49.99
+149_Steamer,Kitchen Appliances,39.99
+150_Popcorn Maker,Kitchen Appliances,24.99
+151_Bread Maker,Kitchen Appliances,89.99
+152_Electric Skillet,Kitchen Appliances,69.99
+153_Ice Cream Maker,Kitchen Appliances,59.99
+154_Food Dehydrator,Kitchen Appliances,69.99
+155_Stand Mixer Attachment Set,Kitchen Accessories,49.99
+156_Silicone Baking Mat Set,Kitchen Accessories,19.99
+157_Mixing Bowl Set,Kitchen Accessories,29.99
+158_Spice Rack,Kitchen Accessories,14.99
+159_Kitchen Utensil Organizer,Kitchen Accessories,24.99
+160_Knife Block Set,Kitchen Accessories,59.99
