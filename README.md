@@ -21,7 +21,7 @@ with actionable insights to optimize product offerings, refine marketing strateg
 
 ### Data Sources
 
-The analysis was conducted using the customer_product_purchase_data.csv dataset, which contains detailed information about sales transactions, customer demographics, and product categories.
+The analysis utilized three datasets: customer data, product data, and purchase_data.csv. These datasets provide comprehensive information on sales transactions, customer demographics, and product categories.
 
 ### Tools
 - MySQL - Data cleaning and analysis
