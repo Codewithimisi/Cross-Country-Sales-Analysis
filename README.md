@@ -1,7 +1,7 @@
 # Cross-Country Sales Analysis
 
 ## Dashboard Link
-https://app.powerbi.com/links/S4Wn8qRyqa?ctid=b1a9df48-7114-4055-9473-b443a59687db&pbi_source=linkShare
+https://app.powerbi.com/links/d8Exb8UH47?ctid=b1a9df48-7114-4055-9473-b443a59687db&pbi_source=linkShare
 
 ## Table of Contents
 
