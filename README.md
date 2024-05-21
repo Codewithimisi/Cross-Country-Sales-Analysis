@@ -1,7 +1,7 @@
 # Cross-Country Sales Analysis
 
-## Dashboard Link
-https://app.powerbi.com/links/oo15qGEuZf?ctid=b1a9df48-7114-4055-9473-b443a59687db&pbi_source=linkShare&bookmarkGuid=ea233688-cde0-4bcb-a1bf-de104b97246b
+## Important Links
+[Dashboard](https://app.powerbi.com/links/oo15qGEuZf?ctid=b1a9df48-7114-4055-9473-b443a59687db&pbi_source=linkShare&bookmarkGuid=ea233688-cde0-4bcb-a1bf-de104b97246b)
 
 [SQL Code Analysis](https://github.com/Codewithimisi/Cross-Country-Sales-Analysis/blob/main/SQL%20Code%20Analysis.sql)
 
