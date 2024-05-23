@@ -13,7 +13,7 @@ ALTER TABLE customers
 DROP COLUMN first_name,
 DROP COLUMN last_name;
 
--- 2) Modify the customer_email field to display censored email addresses for customers 
+-- 2) Modify the email field to display censored email addresses for customers 
 
 UPDATE customers
 SET email= concat(substring(email, 1, 2), repeat('*',position('@' in email)-3), substring(email, position('@' in email)));
