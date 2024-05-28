@@ -325,6 +325,4 @@ CREATE VIEW sales AS
 SELECT pu.*,p.product_price, (p.product_price*pu.units_purchased) as total_sales
 FROM purchase pu
 JOIN products p
-ON pu.product_id=p.product_id
-
-
+ON pu.product_id=p.product_id;
