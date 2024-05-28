@@ -10,6 +10,7 @@
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools](#tools)
+- [Cleaning Process](#cleaning-process)
 - [Analysis Process](#analysis-process)
 - [Key Findings](#key-findings)
 - [Recommendations](#recommendations)
@@ -29,13 +30,20 @@ with actionable insights to optimize product offerings, refine marketing strateg
 The analysis utilized three datasets: customer_data.csv, product_data.csv, and purchase_data.csv. These datasets provide comprehensive information on sales transactions, customer demographics, and product categories.
 
 ### Tools
-- MySQL - Data cleaning and analysis
+- Excel - Data Cleaning
+- MySQL - Data Analysis
 - PowerBi - Data Visualization
-
+  
+### Cleaning Process
+1. I used the CONCATENATE function to merge the first and last names of the customers, creating a full name column.
+2. I separated the address column into individual columns for street, city, state, postal code, and country using the Text to Columns feature.
+3. I segmented the customers' ages into age brackets using the IF function.
+4. In the products data, I separated the product ID and name column using the Text to Columns feature.
+   
 ### Analysis Process
 Following the objective definition and data collection for this project, the subsequent steps were implemented:
 
-1. Data importing: The raw data was loaded into the database.
+1. Data importing: The clean data was loaded into the database.
   
 2. Data Cleaning and Preprocessing: The raw data was cleaned and preprocessed to remove any inconsistencies or errors that could affect the analysis.
 
