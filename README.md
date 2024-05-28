@@ -45,19 +45,17 @@ Following the objective definition and data collection for this project, the sub
 
 1. Data importing: The clean data was loaded into the database.
   
-2. Data Cleaning and Preprocessing: The raw data was cleaned and preprocessed to remove any inconsistencies or errors that could affect the analysis.
+2. Exploratory Data Analysis (EDA): Exploratory data analysis was conducted to understand the distribution of sales, customer demographics, and product preferences. 
 
-3. Exploratory Data Analysis (EDA): Exploratory data analysis was conducted to understand the distribution of sales, customer demographics, and product preferences. 
+3. Sales Trend Analysis: I analyzed sales trends over time to identify seasonal patterns, peak sales periods, and areas for improvement in sales performance.
 
-4. Sales Trend Analysis: I analyzed sales trends over time to identify seasonal patterns, peak sales periods, and areas for improvement in sales performance.
+4. Customer Segmentation: Using demographic data,I segmented customers into different groups to better understand their preferences and purchasing behaviors.
 
-5. Customer Segmentation: Using demographic data,I segmented customers into different groups to better understand their preferences and purchasing behaviors.
+5. Product Preference Analysis: I analyzed product sales across different demographics to identify popular products and areas for potential expansion or optimization.
 
-6. Product Preference Analysis: I analyzed product sales across different demographics to identify popular products and areas for potential expansion or optimization.
+6. Top Customers Analysis: I analyzed the behavior of top customers to develop targeted retention strategies and improve customer loyalty
 
-7. Top Customers Analysis: I analyzed the behavior of top customers to develop targeted retention strategies and improve customer loyalty
-
-8. Data Visualization with Power BI: Power BI was employed to create intuitive and dynamic visualizations that breathed life into the analyzed data. Through the creation of interactive dashboards and reports, key insights from the analysis were visually communicated in a clear and understandable manner.
+7. Data Visualization with Power BI: Power BI was employed to create intuitive and dynamic visualizations that breathed life into the analyzed data. Through the creation of interactive dashboards and reports, key insights from the analysis were visually communicated in a clear and understandable manner.
 
 ### Key Findings
 #### 1. Overall Sales Performance
